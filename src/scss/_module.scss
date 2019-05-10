@@ -1,0 +1,46 @@
+h2 {
+  background: $home_bg;
+  padding: $gutter_std;
+}
+
+.list {
+  background: $home_bg / 2;
+  @extend h2;
+
+  li {
+      background: $white;
+      transition: $animation_time all;
+
+      &:hover {
+          background: $black;
+          color: $white;
+      }
+  }
+}
+
+main {
+  > div {
+      background: $black;
+      color: $white;
+      padding: $gutter_std;
+  }
+}
+.weather{
+  border:5px solid red;
+  width: 20%;
+  float:left;
+  background-color: blanchedalmond;
+}
+.yelp{
+  border:5px solid blue;
+  width: 20%;
+  float:left;
+  background-color: aqua;
+
+}
+.movies{
+  border:5px solid green;
+  width: 20%;
+  float:left;
+  background-color: azure;
+}
